@@ -1,3 +1,61 @@
 [user]
-	email = joeper.serrano@gmail.com
 	name = Joeper214
+	email = Joeper.Serrano@gmail.com
+[core]
+	editor = vi
+
+[push]
+	default = current
+
+[pull]
+	default = current
+
+  [color]
+    ui = auto
+
+  [alias]
+    st     = status --short --branch
+    ol     = log --oneline --graph
+    co     = checkout
+    br     = branch
+    ci     = commit -v
+    fix    = commit --amend -v
+    fixa   = commit --amend -v -a
+    ca     = commit -v -a
+    aa     = add .
+    reh    = reset --hard
+    ri     = rebase -i
+    df     = diff
+    dc     = diff --cached
+    sh     = show
+    pl     = pull --ff
+    plr    = pull --rebase
+    ps     = push
+    psu    = !git push -u origin "$(git rev-parse --abbrev-ref HEAD)"
+    git    = !git
+    tig    = !tig
+    gr     = grep -I
+
+  [core]
+    editor = vim +1 -c 'set fenc=utf-8'
+    preloadindex = true
+
+  [help]
+    autocorrect = -1
+
+  [url "git@github.com:"]
+    pushinsteadof = "git://github.com/"
+    pushinsteadof = "https://github.com"
+
+  [rebase]
+    autosquash = true
+
+  [github]
+    user = Joeper214
+
+  [tig "bind"]
+    generic = g move-first-line
+    generic = G move-last-line
+
+  [merge]
+    ff = false
