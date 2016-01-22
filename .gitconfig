@@ -37,7 +37,6 @@
     gr     = grep -I
 
   [core]
-    editor = vim +1 -c 'set fenc=utf-8'
     preloadindex = true
 
   [help]
