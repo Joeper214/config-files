@@ -35,6 +35,7 @@
     git    = !git
     tig    = !tig
     gr     = grep -I
+		coa		 = commit -am
 
   [core]
     preloadindex = true
