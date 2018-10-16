@@ -30,4 +30,20 @@ zplugin load zdharma/zui
 zplugin ice as"program" pick"bin/git-dsf"
 zplugin light zdharma/zsh-diff-so-fancy
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
+
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/joeper/Documents/work/juiz_dot/image_processing_service/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/joeper/Documents/work/juiz_dot/image_processing_service/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/joeper/Documents/work/juiz_dot/image_processing_service/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/joeper/Documents/work/juiz_dot/image_processing_service/node_modules/tabtab/.completions/sls.zsh
