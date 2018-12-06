@@ -46,4 +46,4 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 [[ -f /Users/joeper/Documents/work/juiz_dot/image_processing_service/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/joeper/Documents/work/juiz_dot/image_processing_service/node_modules/tabtab/.completions/serverless.zsh
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/joeper/Documents/work/juiz_dot/image_processing_service/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/joeper/Documents/work/juiz_dot/image_processing_service/node_modules/tabtab/.completions/sls.zsh
+[[ -f /Users/joeper/Documents/work/juiz_dot/image_processing_service/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/joeper/Documents/work/juiz_dot/image_processing_service/node_modules/tabtab/.completions/sls.zshexport PATH="/usr/local/opt/ncurses/bin:$PATH"
